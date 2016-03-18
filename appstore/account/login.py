@@ -17,8 +17,8 @@ class LoginTest(unittest.TestCase):
         self.welcome_url = self.base_url + "/app/#/home/welcome"
         self.empty_text = "用户名或密码不能为空!"
         self.error_text = "用户名或者密码错误，请重试"
-        self.username = "superadmin"
-        self.password = "123456"
+        self.username = ""
+        self.password = ""
 
     def test_url_reachable(self):
         response_code = url_test.UrlTest(self.login_url)
