@@ -14,8 +14,8 @@ class Logout(unittest.TestCase):
         self.login_url = self.base_url + "/app/#/home/login"
         self.driver.get(self.login_url)
         time.sleep(2)
-        self.driver.find_element_by_id("username").send_keys("superadmin")
-        self.driver.find_element_by_id("password").send_keys("123456")
+        self.driver.find_element_by_id("username").send_keys("")
+        self.driver.find_element_by_id("password").send_keys("")
         self.driver.find_element_by_xpath(
             "//button[@ng-click='login()']").click()
         time.sleep(2)
